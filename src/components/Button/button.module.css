@@ -1,0 +1,16 @@
+.goBackBtn {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: rgb(46, 45, 45);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.goBackBtn:hover,
+.goBackBtn:focus {
+  background: white;
+  color: rgb(46, 45, 45);
+  border-color: rgb(46, 45, 45);
+}

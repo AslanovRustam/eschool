@@ -10,7 +10,6 @@ export const TableRowComponent = ({
   firstName,
   SecondName,
   index,
-  // classes,
   colums,
   currentStudentRate,
 }) => {

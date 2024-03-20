@@ -10,7 +10,7 @@ export const TableRowComponent = ({
   firstName,
   SecondName,
   index,
-  classes,
+  // classes,
   colums,
   currentStudentRate,
 }) => {
@@ -20,16 +20,35 @@ export const TableRowComponent = ({
 
   return (
     <TableRow>
-      <TableCell component="th" scope="row" className={classes.tableCell}>
+      <TableCell
+        component="th"
+        scope="row"
+        sx={{
+          borderBottom: "1px solid #e0e0e0",
+          borderRight: "1px solid #e0e0e0",
+        }}
+      >
         {index}
       </TableCell>
-      <TableCell className={classes.tableCell}>
+      <TableCell
+        sx={{
+          borderBottom: "1px solid #e0e0e0",
+          borderRight: "1px solid #e0e0e0",
+        }}
+      >
         <Link to={`/${idStudent}`}>
           {lastName} {firstName} {SecondName}
         </Link>
       </TableCell>
       {colums.map(({ Id }) => (
-        <TableCell key={Id} align="center" className={classes.tableCell}>
+        <TableCell
+          key={Id}
+          align="center"
+          sx={{
+            borderBottom: "1px solid #e0e0e0",
+            borderRight: "1px solid #e0e0e0",
+          }}
+        >
           <CheckBoxComponent
             checked={isStudentAbsent(Id)}
             idStudent={idStudent}

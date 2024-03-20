@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/eschool">
+    <BrowserRouter basename="eschool">
       <QueryClientProvider client={queryClient}>
         <App />
       </QueryClientProvider>

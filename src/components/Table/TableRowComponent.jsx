@@ -35,7 +35,7 @@ export const TableRowComponent = ({
           borderRight: "1px solid #e0e0e0",
         }}
       >
-        <Link to={`/${idStudent}`}>
+        <Link to={`/schoolboy/${idStudent}`}>
           {lastName} {firstName} {SecondName}
         </Link>
       </TableCell>

@@ -1,9 +1,8 @@
 {
   "name": "eschool",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "homepage": "https://AslanovRustam.github.io/eschool/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

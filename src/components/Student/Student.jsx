@@ -9,7 +9,9 @@ const Student = () => {
   const { students, studentsPending, studentsError, studentsErrorDetail } =
     useStudentData();
 
-  const currentStudent = students?.Items.find((item) => item.Id === Number(id));
+  const currentStudent = students?.Items?.find(
+    (item) => item.Id === Number(id)
+  );
 
   if (studentsPending) {
     return <span>Loading...</span>;

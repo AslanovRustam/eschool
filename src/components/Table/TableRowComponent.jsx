@@ -14,7 +14,7 @@ export const TableRowComponent = ({
   currentStudentRate,
 }) => {
   const isStudentAbsent = (id) => {
-    return currentStudentRate.find((item) => item.ColumnId === id);
+    return currentStudentRate?.find((item) => item.ColumnId === id);
   };
 
   return (
@@ -39,7 +39,7 @@ export const TableRowComponent = ({
           {lastName} {firstName} {SecondName}
         </Link>
       </TableCell>
-      {colums.map(({ Id }) => (
+      {colums?.map(({ Id }) => (
         <TableCell
           key={Id}
           align="center"

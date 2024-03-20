@@ -28,7 +28,7 @@ export default function TableComponent() {
   }
 
   const currentStudentRate = (id) => {
-    return rate.Items.filter((item) => item.SchoolboyId === id);
+    return rate?.Items.filter((item) => item.SchoolboyId === id);
   };
 
   return (
@@ -79,7 +79,7 @@ export default function TableComponent() {
                     firstName={FirstName}
                     SecondName={SecondName}
                     index={index + 1}
-                    colums={colums.Items}
+                    colums={colums?.Items}
                     currentStudentRate={currentStudentRate(Id)}
                   />
                 )
